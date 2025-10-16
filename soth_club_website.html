@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SØTH CLUB | Streetwear</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      width: 100%;
+      padding: 30px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    header span {
+      color: #fff;
+      font-weight: 700;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ff0000;
+    }
+
+    section.hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    section.hero h2 {
+      font-size: 4rem;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    section.about {
+      padding: 100px 10%;
+      background-color: #111;
+      text-align: center;
+    }
+    section.about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ff0000;
+    }
+    section.about p {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    section.products {
+      padding: 100px 10%;
+      background-color: #000;
+      text-align: center;
+    }
+    section.products h2 {
+      font-size: 2.5rem;
+      color: #ff0000;
+      margin-bottom: 50px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .product {
+      background-color: #111;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: scale(1.05);
+    }
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .product h3 {
+      padding: 15px 0;
+      color: #fff;
+    }
+
+    section.wholesale {
+      padding: 100px 10%;
+      background-color: #111;
+      text-align: center;
+    }
+    section.wholesale h2 {
+      font-size: 2.5rem;
+      color: #ff0000;
+      margin-bottom: 20px;
+    }
+    section.wholesale p {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+    .wholesale-btn {
+      background: #ff0000;
+      color: #fff;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .wholesale-btn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 10%;
+      background-color: #111;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+    }
+    footer a {
+      color: #ff0000;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SØTH CLUB</h1>
+    <nav>
+      <a href="#about">Nosotros</a>
+      <a href="#products">Productos</a>
+      <a href="#wholesale">Mayorista</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>STREETWEAR CULTURE</h2>
+  </section>
+
+  <section class="about" id="about">
+    <h2>NUESTRA VISIÓN</h2>
+    <p>
+      En <strong>SØTH CLUB</strong> combinamos el estilo urbano con la autenticidad de la cultura callejera. 
+      Cada prenda está diseñada para reflejar la individualidad, la actitud y la energía de quienes viven la moda 
+      como una forma de expresión. Fabricamos con materiales premium y diseños exclusivos que marcan tendencia.
+    </p>
+  </section>
+
+  <section class="products" id="products">
+    <h2>COLECCIÓN DESTACADA</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3fa3" alt="Remera SØTH" />
+        <h3>Remera Oversize SØTH</h3>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1618354691373-d851c4d91d69" alt="Buzo SØTH" />
+        <h3>Buzo Classic Logo</h3>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246" alt="Gorra SØTH" />
+        <h3>Gorra Street Edition</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="wholesale" id="wholesale">
+    <h2>SØTH CLUB MAYORISTA</h2>
+    <p>
+      Si tenés un local o emprendimiento y querés sumar nuestras prendas a tu catálogo, accedé a beneficios exclusivos, precios especiales y atención personalizada para revendedores.
+    </p>
+    <a href="wholesale.html"><button class="wholesale-btn">Ingresar al Apartado Mayorista</button></a>
+  </section>
+
+  <footer id="contact">
+    <p>© 2025 SØTH CLUB — Todos los derechos reservados.</p>
+    <p>Seguinos en <a href="https://instagram.com/soth_club" target="_blank">@soth_club</a></p>
+  </footer>
+</body>
+</html>
